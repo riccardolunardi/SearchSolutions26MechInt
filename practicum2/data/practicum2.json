@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "dtype": "bfloat16"
+  },
+  "patching": [
+    {
+      "id": "capital_01",
+      "split": "development",
+      "question": "What is the capital of Australia?",
+      "correct_answer": "Canberra",
+      "counterfactual_answer": "Melbourne",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Australia is Canberra.\n\nQuestion: What is the capital of Australia?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Australia is Melbourne.\n\nQuestion: What is the capital of Australia?"
+    },
+    {
+      "id": "capital_02",
+      "split": "development",
+      "question": "What is the capital of Canada?",
+      "correct_answer": "Ottawa",
+      "counterfactual_answer": "Toronto",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Canada is Ottawa.\n\nQuestion: What is the capital of Canada?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Canada is Toronto.\n\nQuestion: What is the capital of Canada?"
+    },
+    {
+      "id": "book_01",
+      "split": "development",
+      "question": "Who wrote Pride and Prejudice?",
+      "correct_answer": "Jane Austen",
+      "counterfactual_answer": "Charlotte Bronte",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The novel Pride and Prejudice was written by Jane Austen.\n\nQuestion: Who wrote Pride and Prejudice?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The novel Pride and Prejudice was written by Charlotte Bronte.\n\nQuestion: Who wrote Pride and Prejudice?"
+    },
+    {
+      "id": "place_01",
+      "split": "development",
+      "question": "In which country is the Taj Mahal located?",
+      "correct_answer": "India",
+      "counterfactual_answer": "Pakistan",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Taj Mahal is located in India.\n\nQuestion: In which country is the Taj Mahal located?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Taj Mahal is located in Pakistan.\n\nQuestion: In which country is the Taj Mahal located?"
+    },
+    {
+      "id": "capital_03",
+      "split": "evaluation",
+      "question": "What is the capital of Brazil?",
+      "correct_answer": "Brasilia",
+      "counterfactual_answer": "Rio de Janeiro",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Brazil is Brasilia.\n\nQuestion: What is the capital of Brazil?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Brazil is Rio de Janeiro.\n\nQuestion: What is the capital of Brazil?"
+    },
+    {
+      "id": "capital_04",
+      "split": "evaluation",
+      "question": "What is the capital of Turkey?",
+      "correct_answer": "Ankara",
+      "counterfactual_answer": "Istanbul",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Turkey is Ankara.\n\nQuestion: What is the capital of Turkey?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The capital of Turkey is Istanbul.\n\nQuestion: What is the capital of Turkey?"
+    },
+    {
+      "id": "place_02",
+      "split": "evaluation",
+      "question": "In which country is Machu Picchu located?",
+      "correct_answer": "Peru",
+      "counterfactual_answer": "Bolivia",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: Machu Picchu is located in Peru.\n\nQuestion: In which country is Machu Picchu located?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: Machu Picchu is located in Bolivia.\n\nQuestion: In which country is Machu Picchu located?"
+    },
+    {
+      "id": "place_03",
+      "split": "evaluation",
+      "question": "In which country is the Great Pyramid of Giza located?",
+      "correct_answer": "Egypt",
+      "counterfactual_answer": "Sudan",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Great Pyramid of Giza is located in Egypt.\n\nQuestion: In which country is the Great Pyramid of Giza located?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Great Pyramid of Giza is located in Sudan.\n\nQuestion: In which country is the Great Pyramid of Giza located?"
+    },
+    {
+      "id": "book_02",
+      "split": "evaluation",
+      "question": "Who wrote the novel 1984?",
+      "correct_answer": "George Orwell",
+      "counterfactual_answer": "Aldous Huxley",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The novel 1984 was written by George Orwell.\n\nQuestion: Who wrote the novel 1984?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The novel 1984 was written by Aldous Huxley.\n\nQuestion: Who wrote the novel 1984?"
+    },
+    {
+      "id": "book_03",
+      "split": "evaluation",
+      "question": "Who wrote The Hobbit?",
+      "correct_answer": "J. R. R. Tolkien",
+      "counterfactual_answer": "C. S. Lewis",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Hobbit was written by J. R. R. Tolkien.\n\nQuestion: Who wrote The Hobbit?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Hobbit was written by C. S. Lewis.\n\nQuestion: Who wrote The Hobbit?"
+    },
+    {
+      "id": "art_01",
+      "split": "evaluation",
+      "question": "Who painted the Mona Lisa?",
+      "correct_answer": "Leonardo da Vinci",
+      "counterfactual_answer": "Raphael",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Mona Lisa was painted by Leonardo da Vinci.\n\nQuestion: Who painted the Mona Lisa?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Mona Lisa was painted by Raphael.\n\nQuestion: Who painted the Mona Lisa?"
+    },
+    {
+      "id": "art_02",
+      "split": "evaluation",
+      "question": "Who painted The Starry Night?",
+      "correct_answer": "Vincent van Gogh",
+      "counterfactual_answer": "Claude Monet",
+      "correct_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Starry Night was painted by Vincent van Gogh.\n\nQuestion: Who painted The Starry Night?",
+      "counterfactual_prompt": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.\n\nPassage: The Starry Night was painted by Claude Monet.\n\nQuestion: Who painted The Starry Night?"
+    }
+  ],
+  "sentiment_pairs": [
+    {
+      "id": "sentiment_01",
+      "topic": "restaurant",
+      "positive": "The food was delicious and the service was excellent.",
+      "negative": "The food was terrible and the service was awful."
+    },
+    {
+      "id": "sentiment_02",
+      "topic": "restaurant",
+      "positive": "The meal was delightful and worth every penny.",
+      "negative": "The meal was disappointing and a waste of money."
+    },
+    {
+      "id": "sentiment_03",
+      "topic": "restaurant",
+      "positive": "The staff were friendly and the dishes were outstanding.",
+      "negative": "The staff were rude and the dishes were dreadful."
+    },
+    {
+      "id": "sentiment_04",
+      "topic": "cafe",
+      "positive": "The coffee was wonderful and the atmosphere was welcoming.",
+      "negative": "The coffee was horrible and the atmosphere was unpleasant."
+    },
+    {
+      "id": "sentiment_05",
+      "topic": "purchase",
+      "positive": "The product was reliable and exceeded my expectations.",
+      "negative": "The product was unreliable and fell below my expectations."
+    },
+    {
+      "id": "sentiment_06",
+      "topic": "purchase",
+      "positive": "The item was beautifully made and worked perfectly.",
+      "negative": "The item was poorly made and worked badly."
+    },
+    {
+      "id": "sentiment_07",
+      "topic": "delivery",
+      "positive": "The package arrived quickly and in perfect condition.",
+      "negative": "The package arrived late and in terrible condition."
+    },
+    {
+      "id": "sentiment_08",
+      "topic": "delivery",
+      "positive": "The delivery was efficient and the communication was excellent.",
+      "negative": "The delivery was chaotic and the communication was awful."
+    },
+    {
+      "id": "sentiment_09",
+      "topic": "course",
+      "positive": "The course was engaging and the explanations were clear.",
+      "negative": "The course was boring and the explanations were confusing."
+    },
+    {
+      "id": "sentiment_10",
+      "topic": "course",
+      "positive": "The lessons were inspiring and genuinely useful.",
+      "negative": "The lessons were tedious and completely useless."
+    },
+    {
+      "id": "sentiment_11",
+      "topic": "concert",
+      "positive": "The performance was brilliant and the sound was superb.",
+      "negative": "The performance was dreadful and the sound was terrible."
+    },
+    {
+      "id": "sentiment_12",
+      "topic": "concert",
+      "positive": "The concert was exciting and the musicians were outstanding.",
+      "negative": "The concert was dull and the musicians were disappointing."
+    },
+    {
+      "id": "sentiment_13",
+      "topic": "app",
+      "positive": "The app was easy to use and worked smoothly.",
+      "negative": "The app was difficult to use and crashed constantly."
+    },
+    {
+      "id": "sentiment_14",
+      "topic": "app",
+      "positive": "The interface was intuitive and the features were helpful.",
+      "negative": "The interface was confusing and the features were frustrating."
+    },
+    {
+      "id": "sentiment_15",
+      "topic": "game",
+      "positive": "The game was entertaining and beautifully designed.",
+      "negative": "The game was boring and badly designed."
+    },
+    {
+      "id": "sentiment_16",
+      "topic": "game",
+      "positive": "The experience was enjoyable and I would recommend it.",
+      "negative": "The experience was unpleasant and I would avoid it."
+    },
+    {
+      "id": "sentiment_17",
+      "topic": "excursion",
+      "positive": "The excursion was memorable and the guide was excellent.",
+      "negative": "The excursion was forgettable and the guide was awful."
+    },
+    {
+      "id": "sentiment_18",
+      "topic": "excursion",
+      "positive": "The outing was relaxing and extremely well organised.",
+      "negative": "The outing was stressful and extremely badly organised."
+    },
+    {
+      "id": "sentiment_19",
+      "topic": "bakery",
+      "positive": "The bread was fresh and the pastries were delicious.",
+      "negative": "The bread was stale and the pastries were disgusting."
+    },
+    {
+      "id": "sentiment_20",
+      "topic": "bakery",
+      "positive": "The bakery was welcoming and the selection was impressive.",
+      "negative": "The bakery was unwelcoming and the selection was disappointing."
+    },
+    {
+      "id": "sentiment_21",
+      "topic": "repair",
+      "positive": "The repair was quick and the technician was helpful.",
+      "negative": "The repair was slow and the technician was unhelpful."
+    },
+    {
+      "id": "sentiment_22",
+      "topic": "repair",
+      "positive": "The work was excellent and the problem was fully resolved.",
+      "negative": "The work was shoddy and the problem was left unresolved."
+    },
+    {
+      "id": "sentiment_23",
+      "topic": "shop",
+      "positive": "The shop was pleasant and the staff were attentive.",
+      "negative": "The shop was unpleasant and the staff were dismissive."
+    },
+    {
+      "id": "sentiment_24",
+      "topic": "shop",
+      "positive": "The selection was excellent and the prices were reasonable.",
+      "negative": "The selection was poor and the prices were outrageous."
+    }
+  ],
+  "review_prompts": [
+    {
+      "id": "dev_restaurant",
+      "split": "development",
+      "topic": "a restaurant",
+      "prompt": "Write a short review of a restaurant. Mention the food and the service. Use two sentences.",
+      "positive_candidate": "The food was delicious and the service was excellent.",
+      "negative_candidate": "The food was terrible and the service was awful."
+    },
+    {
+      "id": "dev_product",
+      "split": "development",
+      "topic": "a new product",
+      "prompt": "Write a short review of a new product. Mention its quality and ease of use. Use two sentences.",
+      "positive_candidate": "The quality was excellent and it was easy to use.",
+      "negative_candidate": "The quality was terrible and it was difficult to use."
+    },
+    {
+      "id": "eval_hotel",
+      "split": "evaluation",
+      "topic": "a hotel",
+      "prompt": "Write a short review of a hotel. Mention the room and the staff. Use two sentences.",
+      "positive_candidate": "The room was comfortable and the staff were welcoming.",
+      "negative_candidate": "The room was uncomfortable and the staff were rude."
+    },
+    {
+      "id": "eval_film",
+      "split": "evaluation",
+      "topic": "a film",
+      "prompt": "Write a short review of a film. Mention the story and the acting. Use two sentences.",
+      "positive_candidate": "The story was engaging and the acting was excellent.",
+      "negative_candidate": "The story was boring and the acting was terrible."
+    },
+    {
+      "id": "eval_museum",
+      "split": "evaluation",
+      "topic": "a museum",
+      "prompt": "Write a short review of a museum. Mention the exhibits and the layout. Use two sentences.",
+      "positive_candidate": "The exhibits were fascinating and the layout was clear.",
+      "negative_candidate": "The exhibits were dull and the layout was confusing."
+    },
+    {
+      "id": "eval_library",
+      "split": "evaluation",
+      "topic": "a library",
+      "prompt": "Write a short review of a library. Mention the space and the staff. Use two sentences.",
+      "positive_candidate": "The space was welcoming and the staff were helpful.",
+      "negative_candidate": "The space was unpleasant and the staff were unhelpful."
+    }
+  ]
+}

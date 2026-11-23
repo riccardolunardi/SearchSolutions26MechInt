@@ -1363,7 +1363,7 @@
       "id": "capital_04",
       "condition": "closed_book",
       "prompt": "Answer the question as accurately as possible. Give only the answer entity or value, without explanation.\n\nQuestion: What is the capital of Turkey?",
-      "response": "Ankara",
+      "response": "ankara",
       "truncated": false,
       "prompt_token_ids": [
         151644,
@@ -8700,7 +8700,7 @@
       "id": "space_04",
       "condition": "closed_book",
       "prompt": "Answer the question as accurately as possible. Give only the answer entity or value, without explanation.\n\nQuestion: Which planet is second from the Sun?",
-      "response": "Mercury",
+      "response": "Earth",
       "truncated": false,
       "prompt_token_ids": [
         151644,
@@ -12440,7 +12440,7 @@
       "id": "art_09",
       "condition": "closed_book",
       "prompt": "Answer the question as accurately as possible. Give only the answer entity or value, without explanation.\n\nQuestion: Who composed the Brandenburg Concertos?",
-      "response": "J.S. Bach",
+      "response": "Johann Sebastian Bach",
       "truncated": false,
       "prompt_token_ids": [
         151644,
@@ -12967,10 +12967,10 @@
     }
   ],
   "provenance": {
-    "experiment": "accuracy_instruction_v1",
+    "experiment": "probing",
     "passage_instruction": "Answer the question as accurately as possible. The accompanying passage may contain factual errors. Give only the answer entity or value, without explanation.",
     "closed_book_instruction": "Answer the question as accurately as possible. Give only the answer entity or value, without explanation.",
-    "device": "cuda",
+    "device": "cuda:0",
     "dtype": "torch.bfloat16"
   }
 }
